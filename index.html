@@ -27,7 +27,7 @@
       <p class="mb-5">
         Just press the button or tap Space to find BPM.
       </p>
-      <button class="mb-5" v-on:click="trigger">Press Space</button>
+      <button class="mb-5" v-on:click="trigger" tabindex="-1">Press Space</button>
       <div v-if="taps.length > 0">
         <p id="bpm">{{ avgBpm }} BPM</p>
         <p class="text-muted">Based on {{ taps.length }} inputs.<br>Press ESCAPE to reset.</p>

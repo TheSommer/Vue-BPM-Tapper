@@ -28,6 +28,12 @@ var app = new Vue({
   }
 })
 
+$('button').on('mousedown',
+    function(e) {
+        e.preventDefault();
+    }
+);
+
 $(document).ready(function() {
   $(document).keydown(function(e) {
     if (e.keyCode == '32') {
